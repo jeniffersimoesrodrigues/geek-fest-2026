@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geek Fest 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>🎮 Geek Fest 2026</h1>
+        <p>O universo geek em um só lugar!</p>
+    </header>
+
+    <main>
+        <section class="sobre">
+            <h2>Sobre o evento</h2>
+            <p>
+                Prepare-se para um dia cheio de diversão,
+                tecnologia, games, animes e cultura geek!
+                Venha conhecer outros fãs e viver essa aventura.
+            </p>
+        </section>
+
+        <section class="atividades">
+            <h2>O que vai acontecer?</h2>
+            <ul>
+                <li>🎮 Campeonato de jogos</li>
+                <li>🦸 Concurso de cosplay</li>
+                <li>🎤 Palestras sobre tecnologia</li>
+                <li>🎲 Jogos de tabuleiro</li>
+                <li>🎌 Exposição de animes e mangás</li>
+            </ul>
+        </section>
+
+        <section class="inscricao">
+            <h2>Faça sua inscrição</h2>
+
+            <form id="formulario">
+                <label for="nome">Nome completo:</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+                <label for="email">E-mail:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+
+                <label for="atividade">Atividade favorita:</label>
+                <select id="atividade" name="atividade" required>
+                    <option value="">Escolha uma atividade</option>
+                    <option value="Games">Games</option>
+                    <option value="Cosplay">Cosplay</option>
+                    <option value="Palestras">Palestras</option>
+                    <option value="Animes">Animes</option>
+                </select>
+
+                <button type="submit">Inscrever-se</button>
+            </form>
+
+            <p id="mensagem" role="status"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Geek Fest | Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
